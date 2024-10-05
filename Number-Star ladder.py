@@ -34,16 +34,16 @@
 #                     text += "\n1" + "*" * (i-1) + str(i)
 #     return text
 
+# def pattern(n):
+#     text = ""
+#     for i in range(1,n+1):
+#             text = "1" if i == 1 else text + "\n1" + "*" * (i-1) + str(i)
+#     return text
+
+
+
 def pattern(n):
-    text = ""
-    if n == 1:
-        text = '1'
-
-    else:
-        for i in range(1,n+1):
-                text = "1" if i == 1 else text + "\n1" + "*" * (i-1) + str(i)
-
-    return text
+    return  "".join(["1" if i == 1 else "\n1" + "*" * (i-1) + str(i)  for i in range(1,n+1)])
 
 
 # print(pattern(1))
