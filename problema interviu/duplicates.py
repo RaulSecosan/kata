@@ -3,11 +3,10 @@ def duplicate(list):
     newList = []
 
     for element in list:
-
         if type(element) == str:
             if element.lower() not in newList:
                 newList.append(element.lower())
-
+        #pentru numere
         elif element not in newList:
             newList.append(element)
     return newList

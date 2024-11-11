@@ -8,7 +8,6 @@ def sort(list):
         for ind,elementFromNewList in enumerate(newList):
             if element  < elementFromNewList:
                 newList.insert(ind,element)
-                # print("newList++ ", newList)
                 break
             #Elimina duplicatele
             elif element == elementFromNewList:
@@ -46,5 +45,6 @@ def sort(list):
 #             list.append(i)
 #     return list
 #
-# print(sort([4, 3, 2,8, 1, 5, 0]))  # Așteptat: [0, 1, 2, 3, 4, 5]
+print(sort([4, 3, 2,8, 1, 5, 0]))  # Așteptat: [0, 1, 2, 3, 4, 5]
+print(sort(['raul','andrei','elena','zele']))
 #
